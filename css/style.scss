@@ -282,6 +282,8 @@ header {
 
     // nav section
     .nav-section {
+        background-color: transparent;
+
         .navbar {
             .navbar-nav {
                 .nav-item {
@@ -318,11 +320,19 @@ header {
     // nav section end 
     // banner section 
     .banner-section {
-        padding: 170px 0;
-        background-image: url(../assets/banner-bg.png);
+        padding: 430px 0;
+        background-image: url(../assets/new-feature.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
+        background-color: transparent;
+        margin-top: -100px;
+
+        .banner-card {
+            padding: 30px;
+            background-color: #FFF;
+        }
+
 
         @media (max-width:1199px) {
             padding: 150px 0;
@@ -530,4 +540,71 @@ footer {
 
 .tab-pane ul {
     padding-left: 1.2rem;
+}
+
+.winterv3 {
+    padding: 100px 0;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.product-title {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    text-align: center;
+}
+
+.product-price {
+    font-size: 0.85rem;
+    color: #555;
+    text-align: center;
+}
+
+.product-card img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+}
+
+.form-label {
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.order-summary {
+    font-size: 0.9rem;
+}
+
+.order-summary th,
+.order-summary td {
+    padding: 0.75rem 0;
+    border-top: 1px solid #dee2e6;
+}
+
+.order-summary th {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+}
+
+.btn-dark {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
 }

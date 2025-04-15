@@ -19,8 +19,8 @@
 <body>
     <!-- Header section start  -->
     <header>
-        <section class="nav-section">
-            <nav class="navbar navbar-expand-lg bg-light">
+        <section class="nav-section position-relative">
+            <nav class="navbar navbar-expand-lg">
                 <div class="container">
                     <!-- Left Side Logo -->
                     <a class="navbar-brand cormorant-garamond-700 fs-25 lh-102" href="#">Style Maven</a>
@@ -43,7 +43,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active yantramanav-regular fs-15 lh-122 text-uppercase"
-                                    href="shop.html">Shop</a>
+                                    href="tab.html">Shop</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active yantramanav-regular fs-15 lh-122 text-uppercase"
@@ -51,7 +51,7 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active yantramanav-regular fs-15 lh-122 text-uppercase"
-                                    href="#">Landing</a>
+                                    href="checkout.html">checkout</a>
                             </li>
 
                         </ul>
@@ -98,259 +98,213 @@
             <div class="about-banner">
                 <h6 class="winter-left-block-subhead yantramanav-medium fs-15 lh-153 text-uppercase pb-3 text-center">
                     info</h6>
-                <h2 class="pb-3 text-center">Shop</h2>
+                <h2 class="pb-3 text-center">About Us</h2>
             </div>
         </div>
     </section>
     <!-- <!-- about us end  -->
 
-    <!-- shop section  -->
-    <section class="shop-section">
+    <!-- tab section  -->
+    <section class="tab-section">
         <div class="container">
-            <div class="row align-items-baseline">
-                <div class="col-lg-4">
-                    <div class="shop-left-block d-flex flex-column gap-5">
-                        <div class="categories">
-                            <h3 class="cormorant-garamond-300 fs-40 text-uppercase pb-4">Categories</h3>
-                            <div class="categories-item d-flex flex-column gap-2">
-                                <h6 class="yantramanav-regular fs-16 lh-143">Anklet (3)</h6>
-                                <h6 class="yantramanav-regular fs-16 lh-143">Crystal (1)</h6>
-                                <h6 class="yantramanav-regular fs-16 lh-143">Dresses (3)</h6>
-                                <h6 class="yantramanav-regular fs-16 lh-143">Fashion (12)</h6>
-                                <h6 class="yantramanav-regular fs-16 lh-143">Furniture (8)</h6>
-                                <h6 class="yantramanav-regular fs-16 lh-143">Gift (3)</h6>
-                            </div>
-                        </div>
-                        <div class="tags">
-                            <h3 class="cormorant-garamond-300 fs-40 text-uppercase pb-4">Categories</h3>
-                            <div class="tags-item d-flex flex-wrap gap-2">
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">Beauty</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">casual</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">colorful</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">decor</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">design</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">gold</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">diamonds</button>
-                                <button
-                                    class="shop-tag-capsule yantramanav-regular fs-12 lh-141 text-uppercase">jewelery</button>
+            <div class="container py-5">
+                <!-- Tab Navigation -->
+                <ul class="nav nav-tabs justify-content-center mb-4" id="jewelryTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all"
+                            type="button" role="tab">ALL</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="new-tab" data-bs-toggle="tab" data-bs-target="#new" type="button"
+                            role="tab">NEW</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="rated-tab" data-bs-toggle="tab" data-bs-target="#rated"
+                            type="button" role="tab">RATED</button>
+                    </li>
+                </ul>
 
-
-
-
-
-
-
-                            </div>
-                        </div>
-                        <div class="popular-product">
-                            <h3 class="cormorant-garamond-300 fs-40 text-uppercase pb-4">Categories</h3>
-                            <div class="popular-items-wrapper d-flex flex-column gap-4">
-                                <div class="popular-item d-flex gap-3">
-                                    <div class="popular-item-img">
-                                        <img src="assets/popular-img.png" alt="">
-                                    </div>
-                                    <div class="popular-item-details">
-                                        <h4 class="cormorant-garamond-300 fs-24 text-uppercase pb-2 secondary-color">
-                                            Sparkling Diamond Brooch
-                                        </h4>
-                                        <h6 class="primary-color yantramanav-medium fs-15 primary-color">$ 956.40 USD
-                                        </h6>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
+                <!-- Tab Content -->
+                <div class="tab-content" id="jewelryTabContent">
+                    <!-- All Tab -->
+                    <div class="tab-pane fade show active" id="all" role="tabpanel">
+                        <div class="row g-4">
+                            <!-- Repeat this card block for each product -->
+                            <!-- You can replace the src with your image URLs -->
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-1.png" alt="">
                                 </div>
-                                <div class="popular-item d-flex gap-3">
-                                    <div class="popular-item-img">
-                                        <img src="assets/popular-img.png" alt="">
-                                    </div>
-                                    <div class="popular-item-details">
-                                        <h4 class="cormorant-garamond-300 fs-24 text-uppercase pb-2 secondary-color">
-                                            Sparkling Diamond Brooch
-                                        </h4>
-                                        <h6 class="primary-color yantramanav-medium fs-15 primary-color">$ 956.40 USD
-                                        </h6>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="popular-item d-flex gap-3">
-                                    <div class="popular-item-img">
-                                        <img src="assets/popular-img.png" alt="">
-                                    </div>
-                                    <div class="popular-item-details">
-                                        <h4 class="cormorant-garamond-300 fs-24 text-uppercase pb-2 secondary-color">
-                                            Sparkling Diamond Brooch
-                                        </h4>
-                                        <h6 class="primary-color yantramanav-medium fs-15 primary-color">$ 956.40 USD
-                                        </h6>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
-                                </div>
-                                <div class="popular-item d-flex gap-3">
-                                    <div class="popular-item-img">
-                                        <img src="assets/popular-img.png" alt="">
-                                    </div>
-                                    <div class="popular-item-details">
-                                        <h4 class="cormorant-garamond-300 fs-24 text-uppercase pb-2 secondary-color">
-                                            Sparkling Diamond Brooch
-                                        </h4>
-                                        <h6 class="primary-color yantramanav-medium fs-15 primary-color">$ 956.40 USD
-                                        </h6>
-                                    </div>
-
-
-
-
-
-
-
-
-
-
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
                                 </div>
                             </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-2.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-3.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-4.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-5.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-6.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-7.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-8.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-9.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-10.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-11.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="product-right-img pb-3">
+                                    <img src="assets/shop-image-12.png" alt="">
+                                </div>
+                                <div class="product-right-details">
+                                    <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">
+                                        Sparkling
+                                        Diamond Brooch</h5>
+                                    <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40
+                                        USD
+                                    </h6>
+                                </div>
+                            </div>
+
 
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-8">
-                    <div class="row gy-3">
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image2.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image3.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image4.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image5.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image6.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image7.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 d-flex flex-column gap-3">
-                            <div class="product-right-img">
-                                <img src="assets/product-image8.png" alt="">
-                            </div>
-                            <div class="product-right-details">
-                                <h5 class="cormorant-garamond-300 fs-16 secondary-color text-uppercase pb-2">Sparkling
-                                    Diamond Brooch</h5>
-                                <h6 class="yantramanav-medium fs-15 lh-153 text-uppercase primary-color">$ 956.40 USD
-                                </h6>
-                            </div>
-                        </div>
 
+                    <!-- New Tab -->
+                    <div class="tab-pane fade" id="new" role="tabpanel">
+                        <div class="text-center py-5">New products coming soon...</div>
+                    </div>
+
+                    <!-- Rated Tab -->
+                    <div class="tab-pane fade" id="rated" role="tabpanel">
+                        <div class="text-center py-5">Top rated products will be shown here...</div>
                     </div>
                 </div>
             </div>
         </div>
-        </div>
     </section>
-    <!-- shop section end -->
-
-
-
-
-
-
-
-
 
     <!-- cta section  -->
     <section class="cta-section bg-khaki">
