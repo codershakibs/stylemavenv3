@@ -1,0 +1,436 @@
+/**
+ * @Main scss for (Template/Project Name)
+ * @project     - Style Maven V2
+ * @author      -
+ * @created_by  - Shakib
+ * @created_at  -
+ * @modified_by -
+ */
+/* reset, root */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Yantramanav", sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: "Yantramanav", sans-serif;
+}
+
+:root {
+  --primary-color: #353535;
+  --secondary-color: #000;
+  --bg-khaki: #DDD9CA;
+}
+
+/* fonts import -END */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+a {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none;
+}
+
+/* reset, root - END */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1225px !important;
+  }
+}
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* helper , base classes */
+.primary-color {
+  color: #353535;
+}
+
+.c {
+  color: #000;
+}
+
+.bg-khaki {
+  background-color: #DDD9CA;
+}
+
+.yantramanav-thin {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.yantramanav-light {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.yantramanav-regular {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.yantramanav-medium {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.yantramanav-bold {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.yantramanav-black {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.cormorant-garamond-300 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.cormorant-garamond-700 {
+  font-family: "Cormorant Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-15 {
+  font-size: 15px;
+}
+
+.fs-16 {
+  font-size: 16px;
+}
+
+.fs-17 {
+  font-size: 17px;
+}
+
+.fs-25 {
+  font-size: 25px;
+}
+
+.fs-40 {
+  font-size: 40px;
+}
+
+.fs-50 {
+  font-size: 50px;
+}
+
+.fs-66 {
+  font-size: 66px;
+}
+
+.fs-90 {
+  font-size: 90px;
+}
+
+.lh-122 {
+  line-height: 122%;
+}
+
+.lh-102 {
+  line-height: 102.52%;
+}
+
+.lh-90 {
+  line-height: 90%;
+}
+
+.lh-153 {
+  line-height: 153%;
+}
+
+.lh-135 {
+  line-height: 135%;
+}
+
+.lh-121 {
+  line-height: 121.429%;
+}
+
+.lh-135 {
+  line-height: 135.294%;
+}
+
+.lh-100 {
+  line-height: 100%;
+}
+
+.lh-104 {
+  line-height: 104%;
+}
+
+.lh-113 {
+  line-height: 113.333%;
+}
+
+.lh-143 {
+  line-height: 143.438%;
+}
+
+.btn-outline {
+  padding: 18px 43px 18px 43px;
+  border: 1px solid #000;
+  display: inline-flex;
+  transition: all 0.5s ease-in-out;
+}
+.btn-outline a {
+  transition: all 0.5s ease-in-out;
+}
+.btn-outline:hover {
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+}
+.btn-outline:hover a {
+  color: #FFF;
+}
+
+h1 {
+  color: var(--primary-color) !important;
+  font-family: "Cormorant Garamond", serif !important;
+  font-weight: 300;
+  line-height: 90%;
+  font-size: 90px;
+}
+@media (max-width: 1199px) {
+  h1 {
+    font-size: 70px;
+  }
+}
+@media (max-width: 991px) {
+  h1 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 575px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-size: 66px;
+  line-height: 90%;
+  text-transform: uppercase;
+}
+
+/* helper , base classes  - END*/
+header .nav-section .navbar .navbar-nav .nav-item .nav-link {
+  position: relative;
+  transition: color 0.3s ease;
+  color: #000;
+  letter-spacing: 1.5px;
+}
+header .nav-section .navbar .navbar-nav .nav-item .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -5px;
+  background-color: var(--primary-color);
+  transition: width 0.3s ease;
+}
+header .nav-section .navbar .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary-color);
+}
+header .nav-section .navbar .navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+header .banner-section {
+  padding: 170px 0;
+  background-image: url(../assets/banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+@media (max-width: 1199px) {
+  header .banner-section {
+    padding: 150px 0;
+  }
+}
+@media (max-width: 991px) {
+  header .banner-section {
+    padding: 100px 0;
+  }
+}
+@media (max-width: 767px) {
+  header .banner-section {
+    padding: 80px 0;
+  }
+}
+@media (max-width: 575px) {
+  header .banner-section {
+    padding: 50px 0;
+  }
+}
+header .banner-section .banner-wrapper .banner-heading {
+  max-width: 660px;
+}
+
+.winter .winter-wrapper .winter-left-block .winter-left-block-subhead {
+  letter-spacing: 4.5px;
+}
+
+.bestseller {
+  padding: 100px 0;
+}
+
+.ring-item {
+  padding: 100px 0;
+}
+
+.home-grid {
+  padding: 100px 0;
+}
+.home-grid .home-grid-items .home-grid-img {
+  position: relative;
+}
+.home-grid .home-grid-items .home-grid-img h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cta-section {
+  padding: 100px 0;
+}
+.cta-section .cta-wrapper .cta-top-block .cta-email .cta-input {
+  border-bottom: 1px solid #949287 !important;
+  width: 627px;
+  padding-bottom: 30px;
+  background-color: transparent;
+}
+.cta-section .cta-wrapper .cta-top-block .cta-email .cta-input::-moz-placeholder {
+  color: 808080;
+}
+.cta-section .cta-wrapper .cta-top-block .cta-email .cta-input::placeholder {
+  color: 808080;
+}
+.cta-section .cta-wrapper .cta-top-block .cta-email .cta-input:focus {
+  outline: none;
+}
+
+footer {
+  padding: 100px 0;
+  background-color: #000;
+}
+footer .footer-wrapper .footer-links .footer-links-heading {
+  letter-spacing: 4.5px;
+}
+
+.about-banner {
+  padding: 200px 0;
+  background-image: url(../assets/about-banner-bg.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.about-winter {
+  padding: 100px 0;
+}
+.about-winter .about-winter-heading {
+  width: 905px;
+}
+
+.about-last-section {
+  padding: 100px 0;
+}
+
+.shop-section {
+  padding: 100px 0;
+}
+.shop-section .shop-left-block .tags .shop-tag-capsule {
+  padding: 12px 24px;
+  background-color: transparent;
+  border: 1px solid #000;
+}
+
+.color-swatch {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-block;
+  border: 2px solid transparent;
+  cursor: pointer;
+}
+
+.color-swatch.selected {
+  border-color: #ccc;
+}
+
+.size-option input[type=radio] {
+  display: none;
+}
+
+.size-option label {
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 15px;
+  cursor: pointer;
+}
+
+.size-option input[type=radio]:checked + label {
+  background-color: #000;
+  color: #fff;
+}
+
+.thumbnail img {
+  width: 70px;
+  height: 70px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 8px;
+}
+
+.quantity-control {
+  width: 120px;
+}
+
+.quantity-control .form-control {
+  pointer-events: none;
+}
+
+.tab-pane ul {
+  padding-left: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
